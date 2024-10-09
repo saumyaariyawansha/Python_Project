@@ -1,13 +1,13 @@
 # The Analysis
 
-## What are the most demanded skills for the top 3 most popular data roles?
+## 1. What are the most demanded skills for the top 3 most popular data roles?
 
 To do this, first I filtered out the most popular job titles among all the data job roles and then get the top 5 skills required for each of the job roles. This query can be used as a highlighted as for which skills to focus more when applying for a specific job title.
 
 View my notebok with detailed steps here:
 [Skills_demand.ipynb](Project/Skills_demand.ipynb)
 
-### Visualize data
+### Visualize Data
 
 ```python
 
@@ -40,3 +40,30 @@ plt.show()
 ![visualization of the top skills](Project/Images/skill_demand.png)
 
 ### Insights
+
+## 2. How are in-demand skills trending for Data Analysts?
+
+### Visualise Data
+
+### Results
+
+![trend of the skills](Project/Images/skills_trend.png)
+
+## 3. How well do jobs and skills pay for Data Analysts?
+
+### Salary Analysis
+
+### Visualize Data
+
+```python
+sns.boxplot(data=df_US_Top6, x='salary_year_avg', y='job_title_short', order=job_order)
+
+plt.title('Salary Distribution in US')
+plt.xlabel('Yearly Salary ($USD)')
+plt.ylabel('')
+ax = plt.gca()
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f'${int(x/1000)}K'))
+
+plt.xlim(0, 600000)
+plt.show()
+```
