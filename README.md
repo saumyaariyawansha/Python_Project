@@ -2,7 +2,7 @@
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
 
-To do this, first I filtered out the most popular job titles among all the data job roles and then get the top 5 skills required for each of the job roles. This query can be used as a highlighted as for which skills to focus more when applying for a specific job title.
+To do this, first I filtered out the most popular job titles among all the data job roles and then get the top 5 skills required for each of the job roles. This query can be used as a highlight as for which skills to focus more when applying for each of these specific job title.
 
 View my notebok with detailed steps here:
 [Skills_demand.ipynb](Project/Skills_demand.ipynb)
@@ -10,7 +10,6 @@ View my notebok with detailed steps here:
 ### Visualize Data
 
 ```python
-
 fig, ax = plt.subplots(len(job_titles), 1)
 
 sns.set_theme(style='ticks')
@@ -40,6 +39,28 @@ plt.show()
 ![visualization of the top skills](Project/Images/skill_demand.png)
 
 ### Insights
+
+#### Common Foundational Skills:
+
+* SQL is critical across all three roles, reflecting its importance in querying, manipulating, and managing databases.
+
+    - Data Analyst: 51%
+    - Data Engineer: 68%
+    - Data Scientist: 51%
+
+* Python is another essential skill across roles, particularly for Data Engineers and Data Scientists, highlighting its versatility in data analysis, automation, and machine learning.
+
+    - Data Analyst: 27%
+    - Data Engineer: 65%
+    - Data Scientist: 72%
+
+#### Role-Specific Skills:
+
+:arrow_right:Data Analyst
+
+* Heavy emphasis on SQL (51%), showing the need for spreadsheet proficiency in day-to-day analysis.
+* Tableau (28%) indicates the need for data visualization skills to present insights clearly.
+* SAS (19%) is relevant, but less common, likely due to the growing preference for open-source tools like Python and R.
 
 ## 2. How are in-demand skills trending for Data Analysts?
 
