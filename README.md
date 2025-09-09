@@ -1,11 +1,42 @@
+# Overview
+
+As an all time Data enthusiast, who is currently actively looking for opportunities, I wanted to find out more about nature of Data related roles in the job market. This analysis is mainly focused on uncovering useful insights which ultimately is crucial for all existing Data professionals in their decision making and also the new blood who are eager to join this Data job fields, And I'm also happy to share this interesting findings with anyone who are keen on Data related job opportunities.
+
+# Tools I Used
+
+* Python : Main tool used in this analysis including the libraries below.
+    * Pandas Library : Used to analyse the data
+    * Matplotlib Library : Used for visualizing the data
+    * Seaborn Library : Used to generate more advances visualizations
+* Jupyter Notebooks : Used to run python scripts including my notes and analysis
+* Visual Studio Code : Used to execute python scripts
+* Git & Github : Used for version control and esharing my python code and analysis
+
+# Data Preperation and Cleanup
+
+Before conducting the analysis, I carefully prepared the dataset to ensure accuracy and consistency.
+
+* Job posted date was converted from string to datetime format for easy extraction and/or filtering of data by year, month, day.
+* if present, Job skills data is converted from string to a list format which is easily usable for future analysis.
+
+# Background
+
+* Through this project I was keen on finding answers for below questions:
+    * 1. What are the most demanded skills for the top 3 most popular data roles?
+
+
 # The Analysis
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
+## 2. How are in-demand skills trending for Data Analysts?
+## 3. How well do jobs and skills pay for Data Analysts?
+## 4. What is the most optimal skill to learn for Data Analysts?
+
 
 To do this, first I filtered out the most popular job titles among all the data job roles and then get the top 5 skills required for each of the job roles. This query can be used as a highlight as for which skills to focus more when applying for each of these specific job title.
 
 View my notebok with detailed steps here:
-[Skills_demand.ipynb](Project/Skills_demand.ipynb)
+[2_Skills_demand.ipynb](Project/2_Skills_demand.ipynb)
 
 ### Visualize Data
 
@@ -87,6 +118,11 @@ plt.show()
 
 ## 2. How are in-demand skills trending for Data Analysts?
 
+Does the demand for highly posted skills always stays the same? This analysis helps us find out. I selected the skills with highest demand and then looked at the likelihood of each skill to appear in job postings over the year. 
+
+View my notebok with detailed steps here:
+[3_Skills_trend.ipynb](Project/3_Skills_trend.ipynb)
+
 ### Visualise Data
 
 ```python
@@ -162,6 +198,11 @@ adjust_text(texts)
 
 ## 3. How well do jobs and skills pay for Data Analysts?
 
+Learning skills is a paramount of important but does it really pay off well in thie end? This analysis helps you find out. I have filtered highest paid skills and also highest demanded skills together with the median salary for a better understanding of the market dyanamics.
+
+View my notebok with detailed steps here:
+[4_Salary_analysis.ipynb](Project/4_Salary_analysis.ipynb)
+
 ### Visualize Data
 
 ```python
@@ -206,6 +247,11 @@ plt.show()
 
 
 ## 4. What is the most optimal skill to learn for Data Analysts?
+
+Last but not least, all the analysis aside, what's the most optimal skills to learn as a Data Analyst? I have the top skills plotted against the salary and demand which gives us a complete answer to this question.
+
+View my notebok with detailed steps here:
+[5_Salary_analysis.ipynb](Project/5_Optimal_skills.ipynb)
 
 ### Visualize Data
 
