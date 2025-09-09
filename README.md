@@ -16,22 +16,22 @@ As an all time Data enthusiast, who is currently actively looking for opportunit
 
 Before conducting the analysis, I carefully prepared the dataset to ensure accuracy and consistency.
 
-* Job posted date was converted from string to datetime format for easy extraction and/or filtering of data by year, month, day.
-* if present, Job skills data is converted from string to a list format which is easily usable for future analysis.
+* Job posted date was converted from string to datetime format for easy extraction and filtering of data by year, month, day.
+* Job skills data is converted from string to a list format which was easily usable for further analysis.
 
 # Background
 
 * Through this project I was keen on finding answers for below questions:
+
     * 1. What are the most demanded skills for the top 3 most popular data roles?
+    * 2. How are in-demand skills trending for Data Analysts?
+    * 3. How well do jobs and skills pay for Data Analysts?
+    * 4. What is the most optimal skill to learn for Data Analysts?
 
 
 # The Analysis
 
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
-## 2. How are in-demand skills trending for Data Analysts?
-## 3. How well do jobs and skills pay for Data Analysts?
-## 4. What is the most optimal skill to learn for Data Analysts?
-
 
 To do this, first I filtered out the most popular job titles among all the data job roles and then get the top 5 skills required for each of the job roles. This query can be used as a highlight as for which skills to focus more when applying for each of these specific job title.
 
@@ -87,21 +87,21 @@ plt.show()
 
 #### Role-Specific Skills:
 
-    :arrow_right: Data Analyst
+:arrow_right: Data Analyst
 
 * Heavy emphasis on SQL (51%), showing the need for managing stuctured data.
 * Excel (41%) of job postings highlight Excel as a key tool, indicating the continued importance of spreadsheets for analysis and reporting.
 * Tableau (28%) and Python (27%) shown to be equally important for this role.
 * SAS (19%) is relevant, but less common, likely due to the growing preference for open-source tools like Python and R.
 
-    :arrow_right: Data Engineer
+:arrow_right: Data Engineer
 
 * SQL (68%) of postings highlight SQL, which remains fundamental for managing structured data and building data pipelines.
 * Python (65%) of postings list Python as essential, reflecting the role of programming in building, automating, and maintaining data infrastructure.
 * AWS (43%), showing the importance of cloud computing skills for managing and storing large-scale data.
 * Azure and Spark, (32%), showing that almost one third of the postings has these technologies as a requiremant.
 
-    :arrow_right: Data Scientist
+:arrow_right: Data Scientist
 
 * Python (72%) of postings highlight Python, reflecting its critical role in data analysis, machine learning, and statistical modeling.
 * SQL (51%) of postings still require SQL for data extraction and manipulation, even in this more advanced role.
