@@ -106,9 +106,9 @@ plt.show()
 * Python (72%) of postings highlight Python, reflecting its critical role in data analysis, machine learning, and statistical modeling.
 * SQL (51%) of postings still require SQL for data extraction and manipulation, even in this more advanced role.
 * R (44%) of postings require R, a language heavily used in statistical analysis, suggesting a strong need for advanced analytical skills.
-* SAS and Tableau, Both at 24%, showing that while these tools are useful, they are secondary to Python and R in this role.
+* SAS and Tableau, Both at 24%, showing that while these tools are equally useful, they are secondary to Python and R in this role.
 
-#### Skill Demand summary:
+#### :memo: Skill Demand summary:
 
 * SQL is crucial across all three roles, particularly for Data Engineers (68%) and Data Analysts (51%), showing it’s a core tool in data management.
 * Python is the most in-demand programming language across roles, especially for Data Scientists (72%) and Data Engineers (65%).
@@ -189,7 +189,7 @@ adjust_text(texts)
 * Both Tableau and Python experience a slight rebound in demand towards the end of the year (December), suggesting increased adoption or hiring needs involving technical skills.
 * This could indicate a shift in the market's focus towards more technical and automated processes in data analysis as the year progresses.
 
-#### Skill Trend Summary:
+#### :memo: Skill Trend Summary:
 * SQL and Excel remain essential tools but are showing a slight decline in demand, signaling potential changes in the Data Analyst skill landscape.
 * Tableau and Python remain critical for analysts who need to engage in data visualization and programming.
 * SAS continues to decline in relevance, as open-source alternatives like Python become more preferred.
@@ -226,20 +226,20 @@ plt.show()
 
 #### Highest Paid Skills:
 
-* Skills like dplyr, bitbucket, and gitlab are the most lucrative, with median salaries near $175K-$200K.
-* Specialized skills in blockchain (solidity), AI (hugging face), and NoSQL databases (couchbase, cassandra) also offer high pay, averaging around $125K-$150K.
+* Skills like dplyr, bitbucket, gitlab,lockchain (solidity) and AI (hugging face) are the most lucrative, with median salaries near $175K-$200K.
+* Other specialized skills are offering high pay, highest being couchbase and ansible getting a median salary around ~160K and all other skills ranging around ~$150K-$175K.
 
 #### Most In-Demand Skills:
 
-* Python, Tableau, and R lead the demand for Data Analysts, with median salaries ranging from $90K-$100K.
-* SQL and SQL Server are consistently required, offering around $80K-$85K.
+* Python, Tableau, R and SQL lead the demand for Data Analysts, with median salaries almost up to $100K.
+* Powerpoint, Excel and Word still has demand but it's comparatively lower, which shows demand shifting towards new skills.
 
 #### General Trends:
 
 * Niche and highly technical skills correlate with higher salaries.
 * Core data analysis tools like Python, Tableau, and SQL remain crucial for demand but offer slightly lower median pay compared to specialized tools.
 
-#### Salary Analysis summary - Intersection of Demand and Salary:
+#### :memo: Salary Analysis summary - Intersection of Demand and Salary:
 
 * It is very evident that highly paid skills are not much in high demand. Therefore level of difficulty is much higher for these jobs. But in case one is able to secure a job is guaranteed that the effort is worth it.
 * All top 10 high demand skills pay varies $75K-$100K. So one can also strategize to go for top demanded skills to have a higher chance of getting the ooportunity and also fairly good pay.
@@ -300,27 +300,30 @@ plt.show()
 * Python and SQL show the best combination of demand and salary:
     * Python: High median salary (around $98K) with 35% job postings.
     * SQL: Slightly lower salary (about $90K) but extremely high demand (55% of job postings).
-Medium Demand, High Salary:
 
-* Oracle and SQL Server offer high salaries ($94K-$96K), but their job demand is more moderate, ranging between 10%-20%.
+#### Low Demand, High Salary:
 
-#### In-Demand Analytical Tools:
+* Oracle and SQL Server offer high salaries ($94K-$92K), but their job demand is very low, around 5%.
 
-* Excel: High demand (45% of job postings), but lower median salary ($86K).
-* Tableau: Balances demand and salary with 30% of job postings and a median salary of about $92K.
+#### In-Demand Analytical and Programming Tools:
 
-#### Programming and Databases:
+* Excel: High demand (more than 40% of job postings), but lower median salary (~$84K).
+* Programming skills like R, and Power BI provide salaries around $90K-$92K range, with moderate demand, around 20% of the postings.
 
-* Programming skills like R, Go, and Power BI provide salaries in the $90K range, with moderate demand between 15%-25%.
-* Database skills like SQL Server are valuable, offering higher salaries but with lower demand compared to SQL.
-Lower Demand, Lower Salary:
+
+#### Data Visualization Tools:
+
+* Tableau, Balances demand and salary with more than 30% of job postings and a median salary of about $92K.
+* Power BI has less demand but still manages to earn around $90K.
+
+#### Lower Demand, Lower Salary:
 
 * PowerPoint and Word are lower-paying skills (around $82K-$85K) with limited demand (under 10% of job postings).
 
-#### Optimal Skills summary:
+#### :memo: Optimal Skills summary:
 
 * SQL and Python stand out as essential skills for data analysts, offering the best combination of high salary and high demand.
-* Advanced analytical tools like Tableau and Power BI are also highly relevant, with balanced salary and demand.
+* Data Visualization tools like Tableau and Power BI are also highly relevant, with balanced salary and demand.
 * Database management skills such as SQL Server and Oracle offer significant salary benefits despite lower demand.
 
 
@@ -332,7 +335,7 @@ Lower Demand, Lower Salary:
 * Visualization tools like Tableau are important for Data Analysts (28%) and Data Scientists (24%).
 * SQL and Excel remain critical but are showing a slight decline in demand, suggesting a shift in the Data Analyst skill landscape.
 * Tableau and Python are key for data visualization and programming tasks.
-* SAS is losing relevance as open-source tools like Python gain preference.
+* SAS is losing relevance as open-source tools like Python gains preference.
 * There’s a growing need for technical skills, but traditional tools like SQL and Excel are still relevant.
 * Highly paid skills (e.g., Hugging Face, Couchbase) are less in demand, indicating higher difficulty but better rewards.
 * Most in-demand skills offer salaries between $75K-$100K, making these skills a strategic choice for job security and decent pay.
