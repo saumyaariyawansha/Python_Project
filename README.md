@@ -198,10 +198,9 @@ adjust_text(texts)
 
 ## 3. How well do jobs and skills pay for Data Analysts?
 
-Learning skills is a paramount of important but does it really pay off well in thie end? This analysis helps you find out. I have filtered highest paid skills and also highest demanded skills together with the median salary for a better understanding of the market dyanamics.
+### 3.1 Salary Distribution
 
-View my notebok with detailed steps here:
-[4_Salary_analysis.ipynb](Project/4_Salary_analysis.ipynb)
+How different Data Analyst job roles are getting paid? Let's look at the below graph to get an idea about the salary distribution of top 6 job roles.
 
 ### Visualize Data
 
@@ -216,6 +215,71 @@ ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f'${int(x/1000)}K'
 
 plt.xlim(0, 600000)
 plt.show()
+```
+### Results
+
+![salary analysis](Project/Images/salary_distribution.png)
+
+### Insights
+
+#### Median Salaries
+* Senior Data Engineers have the highest median salary, followed by Data Scientists and Software Engineers.
+
+#### Salary range
+* Software Engineers and Data Scientists show a wider salary range, meaning pay varies a lot depending on experience, company, or location.
+
+* Business Analysts and Data Analysts have a narrower range, suggesting more standardized pay across roles.
+
+#### Outliers (High Salaries)
+
+* All roles, especially Data Scientist, Data Engineer, and Software Engineer, have outliers above $300K, showing opportunities for very high pay at senior or niche levels.
+
+* Senior Data Engineer has fewer extreme outliers but consistently higher base salaries.
+
+#### Entry-Level vs Senior Spread
+
+* Business Analysts and Data Analysts start lower (below $100K) and have less upward growth compared to other roles.
+
+* Software Engineers and Data Scientists not only start higher but also have the potential to move into very high salary brackets.
+
+#### Career Implications
+
+* If someone wants stable, standardized pay, roles like Business Analyst or Data Analyst may be suitable.
+
+* For higher earning potential and growth, Data Science, Data Engineering, or Software Engineering are stronger career paths.
+
+### 2.2 Highest paid data skills
+
+Learning skills is a paramount of important but does it really pay off well in thie end? This analysis helps you find out. I have filtered highest paid skills and also highest demanded skills together with the median salary for a better understanding of the market dyanamics.
+
+View my notebok with detailed steps here:
+[4_Salary_analysis.ipynb](Project/4_Salary_analysis.ipynb)
+
+### Visualize Data
+
+```python
+fig, ax = plt.subplots(2, 1)
+
+sns.set_theme(style='ticks')
+
+sns.barplot(data=df_DA_Top_pay, x='median', y=df_DA_Top_pay.index, ax=ax[0], hue='median', palette='dark:b_r')
+
+ax[0].set_title('Top 10 Highest Paid Skills for Data Analysts')
+ax[0].set_ylabel('')
+ax[0].set_xlabel('')
+ax[0].xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f'${int(x/1000)}K'))
+ax[0].legend().remove()
+
+sns.barplot(data=df_DA_Skills, x='median', y=df_DA_Skills.index, ax=ax[1], hue='median', palette='light:b')
+
+ax[1].set_xlim(ax[0].get_xlim())
+ax[1].set_title('Top 10 Most In-Demand Skills for Data Analysts')
+ax[1].set_ylabel('')
+ax[1].set_xlabel('Median Salary ($USD)')
+ax[1].xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f'${int(x/1000)}K'))
+ax[1].legend().remove()
+
+fig.tight_layout()
 ```
 
 ### Results
@@ -257,8 +321,6 @@ View my notebok with detailed steps here:
 
 ```python
 from adjustText import adjust_text
-
-#df_plot.plot(kind='scatter', x='skill_percent', y='median_salary')
 
 sns.scatterplot(
     data=df_plot,
