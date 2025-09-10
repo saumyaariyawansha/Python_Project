@@ -248,7 +248,12 @@ plt.show()
 
 * For higher earning potential and growth, Data Science, Data Engineering, or Software Engineering are stronger career paths.
 
-### 2.2 Highest paid data skills
+#### :memo: Salary distribution summary:
+* Data-focused engineering roles (Senior Data Engineer, Data Scientist, Data Engineer) are more lucrative and scalable.
+
+* Analyst roles (Data Analyst, Business Analyst) offer steady salaries but limited upside.
+
+### 3.2 Highest paid data skills
 
 Learning skills is a paramount of important but does it really pay off well in thie end? This analysis helps you find out. I have filtered highest paid skills and also highest demanded skills together with the median salary for a better understanding of the market dyanamics.
 
